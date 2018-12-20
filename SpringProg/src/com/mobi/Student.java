@@ -1,66 +1,87 @@
 package com.mobi;
 
 import java.util.ArrayList;
-import java.util.Date;
+import com.mobi.Address;
 
-import org.hibernate.validator.Size;
-
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-
-@JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonIgnoreProperties({"s_skill"})
 public class Student {
+	private String StudentName;
+	private String StudentHobby;
+	private String StudentDOB;
+	private String StudentMobileNo;
+	private ArrayList<String> StudentSkills;
+	private Address StudentAddress;
+
 	
-	//@JsonProperty("Student_name")//to change the name of attribute in the json.
-	private String s_nm;
-	private String s_hobby;
-	
-	@Size(min=8, max=10, message="pls enter the mobile no size bet {min} to {max}")
-	private Long mobile;
-	private Date DOB;
-	private ArrayList<String> s_skill;
-	
-	private Address s_info;
-	
-	public Address getS_info() {
-		return s_info;
+	public Student() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
-	public void setS_info(Address s_info) {
-		this.s_info = s_info;
+
+	public Student(String studentName, String studentHobby, String studentDOB, String studentMobileNo,
+			ArrayList<String> studentSkills, Address studentAddress) {
+		super();
+		StudentName = studentName;
+		StudentHobby = studentHobby;
+		StudentDOB = studentDOB;
+		StudentMobileNo = studentMobileNo;
+		StudentSkills = studentSkills;
+		StudentAddress = studentAddress;
 	}
-	public String getS_nm() {
-		return s_nm;
+
+	public Address getStudentAddress() {
+		return StudentAddress;
 	}
-	public void setS_nm(String s_nm) {
-		this.s_nm = s_nm;
+
+	public void setStudentAddress(Address studentAddress) {
+		StudentAddress = studentAddress;
 	}
-	public String getS_hobby() {
-		return s_hobby;
+
+	public String getStudentName() {
+		return StudentName;
 	}
-	public void setS_hobby(String s_hobby) {
-		this.s_hobby = s_hobby;
+
+	public void setStudentName(String studentName) {
+		StudentName = studentName;
 	}
-	public Long getMobile() {
-		return mobile;
+
+	public String getStudentHobby() {
+		return StudentHobby;
 	}
-	public void setMobile(Long mobile) {
-		this.mobile = mobile;
+
+	public void setStudentHobby(String studentHobby) {
+		StudentHobby = studentHobby;
 	}
-	public Date getDOB() {
-		return DOB;
+
+	public String getStudentDOB() {
+		return StudentDOB;
 	}
-	public void setDOB(Date dOB) {
-		DOB = dOB;
+
+	public void setStudentDOB(String studentDOB) {
+		StudentDOB = studentDOB;
 	}
-	public ArrayList<String> getS_skill() {
-		return s_skill;
+
+	public String getStudentMobileNo() {
+		return StudentMobileNo;
 	}
-	public void setS_skill(ArrayList<String> s_skill) {
-		this.s_skill = s_skill;
+
+	public void setStudentMobileNo(String studentMobileNo) {
+		StudentMobileNo = studentMobileNo;
 	}
-	
-	
+
+	public ArrayList<String> getStudentSkills() {
+		return StudentSkills;
+	}
+
+	public void setStudentSkills(ArrayList<String> studentSkills) {
+		StudentSkills = studentSkills;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [StudentName=" + StudentName + ", StudentHobby=" + StudentHobby + ", StudentDOB=" + StudentDOB
+				+ ", StudentMobileNo=" + StudentMobileNo + ", StudentSkills=" + StudentSkills + ", StudentAddress="
+				+ StudentAddress + "]";
+	}
 
 }
+

@@ -1,36 +1,41 @@
 package com.mobi;
 
 public class Address {
-	
-	private String city;
-	private String pincode;
-	private String state;
-	private String street;
-	public String getCity() {
-		return city;
+	private String Country;
+	private String State;
+	private String Street;
+	private String Pincode;
+
+	public String getCountry() {
+		return Country;
 	}
-	public void setCity(String city) {
-		this.city = city;
+
+	public void setCountry(String country) {
+		Country = country;
 	}
-	public String getPincode() {
-		return pincode;
-	}
-	public void setPincode(String pincode) {
-		this.pincode = pincode;
-	}
+
 	public String getState() {
-		return state;
+		return State;
 	}
+
 	public void setState(String state) {
-		this.state = state;
+		State = state;
 	}
+
 	public String getStreet() {
-		return street;
+		return Street;
 	}
+
 	public void setStreet(String street) {
-		this.street = street;
+		Street = street;
 	}
-	
-	
+
+	public String getPincode() {
+		return Pincode;
+	}
+
+	public void setPincode(String pincode) {
+		Pincode = pincode;
+	}
 
 }
