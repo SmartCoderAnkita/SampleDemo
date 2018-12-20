@@ -23,8 +23,6 @@ public class AdmissionController {
 	public ModelAndView saveForm(@ModelAttribute("student") Student stu) {
 		System.out.println(stu.toString());
 		ModelAndView model = new ModelAndView("AdmissionSuccess");
-//		model.addObject("students", stu);
-//		model.addAttribute("student", stu);
 		return model;
 	}
 
