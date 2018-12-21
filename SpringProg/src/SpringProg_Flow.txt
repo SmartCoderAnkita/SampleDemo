@@ -1,0 +1,14 @@
+Welcome to Spring MVC project
+
+##### Package - version0.com.demo
+
+##### Package - version1.com.demo
+<<< Files - Student and Address beans, AdmissionForm.jsp and AdmissionSuccess.jsp, AdmissionController.java
+	1. @ModelAttribute - By giving @ModelAttribute to function we can add model attribute to whole controller required view resources.
+	2. In AdmissionSuccess.jsp, while getting object sometime 'student.StudentName' works or not so alternative is 'student.getStudentName()'
+		'student' is @ModelAttribute("student") key.
+	3. While submitting form to avoid object invalid DataType error etc. we use BindingResult as parameter.
+		for that we need to add '<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>' in related JSP files.
+		'<form:errors path="student.*" />'
+	4.
+##### Package - version2.com.demo

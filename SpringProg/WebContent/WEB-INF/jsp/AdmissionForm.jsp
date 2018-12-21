@@ -10,6 +10,7 @@
 <body>
 <h1>${headerName}</h1>
 <h4>${formName}</h4>
+<form:errors path="student.*" />
 <form action="${project}admission_success" method="POST">
 <table>
 <tr><td>Student Name      :  </td><td>	<input type="text" name="studentName"/></td></tr>

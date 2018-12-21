@@ -5,10 +5,8 @@ import java.util.Date;
 
 import org.hibernate.validator.Size;
 
-import com.mobi.Address;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties({"s_skill"})

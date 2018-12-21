@@ -1,4 +1,4 @@
-package com.mobi;
+package version1.com.demo;
 
 public class Address {
 	private String Country;

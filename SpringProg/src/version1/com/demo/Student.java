@@ -1,13 +1,15 @@
-package com.mobi;
+package version1.com.demo;
 
+import java.sql.Date;
 import java.util.ArrayList;
-import com.mobi.Address;
+
+import version1.com.demo.Address;
 
 public class Student {
 	private String StudentName;
 	private String StudentHobby;
 	private String StudentDOB;
-	private String StudentMobileNo;
+	private Long StudentMobileNo;
 	private ArrayList<String> StudentSkills;
 	private Address StudentAddress;
 
@@ -17,7 +19,7 @@ public class Student {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Student(String studentName, String studentHobby, String studentDOB, String studentMobileNo,
+	public Student(String studentName, String studentHobby, String studentDOB, Long studentMobileNo,
 			ArrayList<String> studentSkills, Address studentAddress) {
 		super();
 		StudentName = studentName;
@@ -60,11 +62,11 @@ public class Student {
 		StudentDOB = studentDOB;
 	}
 
-	public String getStudentMobileNo() {
+	public Long getStudentMobileNo() {
 		return StudentMobileNo;
 	}
 
-	public void setStudentMobileNo(String studentMobileNo) {
+	public void setStudentMobileNo(Long studentMobileNo) {
 		StudentMobileNo = studentMobileNo;
 	}
 
